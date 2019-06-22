@@ -1,7 +1,7 @@
 import pytest
 import unittest
-from gym_akemon import AkemonEnv
+import gym
 
 class test_client(unittest.TestCase):
     def test_init(self):
-        pass
+        
