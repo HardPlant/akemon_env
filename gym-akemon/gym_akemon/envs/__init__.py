@@ -1,1 +1,1 @@
-from gym_akemon.envs import AkemonEnv
+from gym_akemon.envs.akemon_env import AkemonEnv
