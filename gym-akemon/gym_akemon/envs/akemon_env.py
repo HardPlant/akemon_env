@@ -1,7 +1,7 @@
 import gym
 from gym import error, spaces, utils
 from gym.utils import seeding
-
+from .battle_page import BattlePage
 
 class AkemonEnv(gym.Env):
     metadata = {'render.modes': ['human']}
@@ -36,7 +36,9 @@ class BattleObservation:
 
 class Renderer:
     def __init__(self):
-        pass
+        self.page = BattlePage()
     
     def getRenderer(self):
-        return dict()
+        self.page.get()
+        
+        return self.page
