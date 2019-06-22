@@ -17,6 +17,7 @@ class smoketest(unittest.TestCase):
         self.assertEqual(obs.battle.turn, 1)
     
     def test_render(self):
+        obs = self.env.reset()
         page = self.env.render()
         self.assertNotEqual(self.env, None)
 
