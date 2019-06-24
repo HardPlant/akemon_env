@@ -4,7 +4,7 @@ import gym
 
 class smoketest(unittest.TestCase):
     def setUp(self):
-        self.env = gym.make('gym_akemon:akemon-v0')
+        self.env = gym.make('gym_akemon:akemon-v1')
         self.assertNotEqual(self.env, None)
 
     def test_reset(self):
